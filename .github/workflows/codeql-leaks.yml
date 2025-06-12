@@ -112,5 +112,8 @@ jobs:
     name: TruffleHog OSS
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: trufflesecurity/trufflehog@v3.89.1
 
