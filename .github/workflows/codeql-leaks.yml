@@ -107,4 +107,10 @@ jobs:
       - uses: gitleaks/gitleaks-action@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
+  scan2:
+    name: TruffleHog OSS
+    runs-on: ubuntu-latest
+    steps:
+      - uses: trufflesecurity/trufflehog@v3.89.1
 
